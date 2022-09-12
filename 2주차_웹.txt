@@ -1,0 +1,30 @@
+■ jquery 
+- HTML의 요소들을 조작하는, 편리한 Javascript를 미리 작성해둔 것. 라이브러리!
+
+cdn 사용해서 적용
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+■ 자주 사용하는 jquery들
+$('.class')
+$('#id')
+append()
+hide()
+show()
+
+■ 서버 - 클라이언트 통신 이해하기
+json 파일유형 이해 - key:value 로 이루어져있음
+api - get(read), post(create, update, delete)
+
+■ ajax 
+jquery 임포트한 페이지에서 동작가능
+
+기본 골격
+$.ajax({
+  type: "GET", // GET 방식으로 요청한다.
+  url: "http://spartacodingclub.shop/sparta_api/seoulair",
+  data: {}, // 요청하면서 함께 줄 데이터 (GET 요청시엔 비워두세요)
+  success: function(response){ // 서버에서 준 결과를 response라는 변수에 담음
+    console.log(response) // 서버에서 준 결과를 이용해서 나머지 코드를 작성
+  }
+})
+
