@@ -8,6 +8,7 @@ css는 꾸미기
 html의 부모-자식 구조 파악
 스타일 태그 활용
 
+
 ● 자주 쓰이는 css
 배경관련
 background-color
